@@ -37,9 +37,9 @@ class Display
     if pos == cursor.pos
       cursor.selected ? :blue : :yellow
     elsif (pos[0] + pos[1]).even?
-      highlight?(pos, curr_player) ? :light_red : :magenta
-    else
       highlight?(pos, curr_player) ? :light_cyan : :cyan
+    else
+      highlight?(pos, curr_player) ? :light_red : :magenta
     end
   end
 end

@@ -1,15 +1,15 @@
-require_relative 'piece'
-require_relative 'stepable'
+require_relative '../piece'
+require_relative '../slideable'
 
-class King < Piece
-  include Stepable
+class Queen < Piece
+  include Slideable
 
   def symbol
-    "\u265A"
+    "\u265B"
   end
 
   protected
-  def steps
+  def dirs
     [[-1, -1],
      [-1, 0],
      [-1, 1],
